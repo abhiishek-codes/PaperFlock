@@ -5,7 +5,7 @@ import Quill from "quill";
 import "quill/dist/quill.snow.css";
 import axios from "axios";
 
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://paperflock.onrender.com";
 let socket;
 
 const EditDocument = () => {
@@ -21,7 +21,7 @@ const EditDocument = () => {
     try {
       const content = quill.getContents();
       await axios.post(
-        `http://localhost:5000/api/documents/${docData._id}`,
+        `https://paperflock.onrender.com/api/documents/${docData._id}`,
         { content },
         {
           headers: {

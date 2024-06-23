@@ -34,7 +34,7 @@ const AllDocuments = () => {
       }
 
       const { data } = await axios.delete(
-        `http://localhost:5000/api/documents/delete/${docId}`,
+        `https://paperflock.onrender.com/api/documents/delete/${docId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -57,7 +57,7 @@ const AllDocuments = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/documents",
+          "https://paperflock.onrender.com/api/documents",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -79,7 +79,7 @@ const AllDocuments = () => {
     setquery(e.target.value);
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/users/?search=${e.target.value}`,
+        `https://paperflock.onrender.com/api/users/?search=${e.target.value}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -99,7 +99,7 @@ const AllDocuments = () => {
         newCollaborators: collabData,
       };
       const { data } = axios.put(
-        "http://localhost:5000/api/documents/updateAccess",
+        "https://paperflock.onrender.com/api/documents/updateAccess",
         formdata,
         {
           headers: {
@@ -120,7 +120,7 @@ const AllDocuments = () => {
   const createDoc = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/documents/create",
+        "https://paperflock.onrender.com/api/documents/create",
         {
           title: title,
         },
