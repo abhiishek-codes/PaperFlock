@@ -21,7 +21,7 @@ const Signup = ({ setIsSwapped }) => {
         "https://paperflock.onrender.com/api/users/signup",
         formdata
       );
-      console.log(data);
+      // console.log(data);
       localStorage.setItem("userInfo", JSON.stringify(data));
       navigate("/documents");
     } catch (error) {
