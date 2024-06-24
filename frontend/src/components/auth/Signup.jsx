@@ -45,10 +45,10 @@ const Signup = ({ setIsSwapped }) => {
 
   return (
     <div className="flex flex-col gap-y-2 my-auto items-center w-full max-w-md mx-auto px-8 rounded-lg shadow-md">
-      <h1 className="font-['Body'] tracking-tight text-4xl text-white">
+      <h1 className="font-['Body'] tracking-tight text-2xl sm:text-4xl text-white">
         Create Account
       </h1>
-      <h2 className="font-['Body'] tracking-tight text-xl text-white">
+      <h2 className="font-['Body'] tracking-tight text-xs sm:text-xl text-white">
         Sign up for a new account
       </h2>
       <form
@@ -106,7 +106,7 @@ const Signup = ({ setIsSwapped }) => {
         </button>
       </form>
       <label
-        className="text-[0.7rem] text-white cursor-pointer"
+        className="text-[1rem] text-white cursor-pointer"
         onClick={() => setIsSwapped((prev) => !prev)}
       >
         Already registered? Log In

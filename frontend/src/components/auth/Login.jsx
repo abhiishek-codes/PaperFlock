@@ -41,10 +41,10 @@ const Login = ({ setIsSwapped }) => {
 
   return (
     <div className="flex flex-col gap-y-5 my-auto items-center w-full max-w-md mx-auto px-8 rounded-lg shadow-md ">
-      <h1 className="font-['Body'] tracking-tight text-5xl text-white">
+      <h1 className="font-['Body'] tracking-tight text-2xl sm:text-5xl text-white">
         Welcome Back
       </h1>
-      <h2 className="font-['Body'] tracking-tight text-2xl text-white">
+      <h2 className="font-['Body'] tracking-tight text-base sm:text-2xl text-white">
         Sign in to your account
       </h2>
       <form
