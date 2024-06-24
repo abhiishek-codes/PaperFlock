@@ -34,7 +34,7 @@ const Signup = ({ setIsSwapped }) => {
           // Handle single error message
           setErrorMessage(error.response.data.message);
         } else {
-          // Handle other errors (network issues, etc.)
+      
           setErrorMessage(error.message);
         }
       } else {
